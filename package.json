@@ -1,10 +1,10 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "My Openclassrooms project 3 ohmyfood",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "sass": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "url": "https://github.com/JeanMarieHitayezu/ohmyfood/issues"
   },
   "homepage": "https://github.com/JeanMarieHitayezu/ohmyfood#readme",
-  "dependencies": {
-    "sass": "^1.43.5"
+  "devDependencies": {
+    "sass": "^1.44.0"
   }
 }
