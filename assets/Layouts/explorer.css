@@ -1,0 +1,121 @@
+.town {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.town i {
+  font-size: 1.5rem;
+}
+
+.explorer {
+  text-align: center;
+}
+
+.explorer h2 {
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+}
+
+.explorer p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 2px 1px 16px -3px #000;
+          box-shadow: 2px 1px 16px -3px #000;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  margin: 1rem 0 3rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+.explorer button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: .9;
+}
+
+.choose {
+  padding: 55px 20px 45px -10px;
+}
+
+.choose__title {
+  margin: 30px;
+}
+
+.choose__card {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 10px #c4c3c0;
+          box-shadow: 2px 2px 10px #c4c3c0;
+  border-radius: 1rem;
+  padding: 0 70px 0 30px;
+  margin-bottom: 20px;
+}
+
+.choose__card p {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.choose__card-number {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: -45px;
+  color: white;
+}
+
+.choose__card fas {
+  margin-right: 15px;
+  color: #c4c3c0;
+}
+
+.choose__card:hover {
+  background-color: #f2eafb;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.choose__card:hover:nth-child(3) {
+  color: #9356DC;
+}
+/*# sourceMappingURL=explorer.css.map */
