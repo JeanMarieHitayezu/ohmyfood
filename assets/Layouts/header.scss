@@ -1,8 +1,16 @@
 .Homepage h1 {
-    font-family: 'Shrikhand', cursive;
     text-align: center;
     padding: .3rem;
     margin: 0;
     position: relative;
     box-shadow: 0 0 .5rem rgb(0 0 0 /25%);
+}
+
+.Restau-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+        font-size: 2rem;
+    }
 }

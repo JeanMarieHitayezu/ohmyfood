@@ -3,6 +3,9 @@
 
 .Restaurants {
     background-color: #f6f6f6;
+    h2 {
+        margin-bottom: 3rem;
+    }
     & .fas {
     @include heart;
     }  
@@ -40,6 +43,18 @@
     right: 1rem;
     top: -12rem;
     }
+    & {
+        animation-duration: .8s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+    }
+    @keyframes clignoter {
+        0% {opacity:1}
+        40% {opacity:0}
+        100% {opacity:1}
+    
+    } 
 
 }
 .card__description {
@@ -57,15 +72,3 @@
 }
 
     
-.new {
-    animation-duration: .8s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
-}
-@keyframes clignoter {
-    0% {opacity:1}
-    40% {opacity:0}
-    100% {opacity:1}
-
-} 
