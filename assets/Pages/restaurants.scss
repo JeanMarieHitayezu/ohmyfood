@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     max-width: 600px; 
 }
-.page-la-palette-du-goût {
+.restaurant-details {
     background-color: #f6f6f6;
     }
     .banner img {
@@ -117,7 +117,7 @@ body {
 
 .command button {
     height: 7vh;
-    width: 20vw;
+    width: 15vw;
     @include box-button;
     cursor: pointer;
     margin: 3rem 0 2rem 8rem;
