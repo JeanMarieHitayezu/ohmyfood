@@ -128,6 +128,26 @@ img {
   color: #9356DC;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: 0.9;
+  animation: welcome 300ms 3s forwards;
+  transform-origin: top;
+}
+
+@keyframes welcome {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 .Restaurants {
   background-color: #f6f6f6;
 }

@@ -79,3 +79,23 @@
     }
 }
 
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    opacity: .9;
+    animation: welcome 300ms 3s forwards;
+    transform-origin: top;
+}
+
+@keyframes welcome {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0)
+    }
+}
