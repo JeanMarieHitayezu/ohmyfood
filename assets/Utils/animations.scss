@@ -8,10 +8,12 @@
 }
 
 @keyframes menu-page {
-    0% {
-        transform: scale(0)
+    from {
+        transform: translateY(80%);
+        opacity: 0;
     }
-    100% {
-        transform: scale(1)
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
