@@ -17,7 +17,7 @@ main {
 
 h1 {
   font-family: "shrikhand", "cursive";
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 h1,
@@ -39,6 +39,39 @@ a {
 img {
   margin: 0;
   padding: 0;
+}
+
+.Homepage h1 {
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.Restau-heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Restau-heading i {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+footer h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500;
+}
+footer li {
+  list-style-type: none;
+  margin-left: -2.5rem;
+  line-height: 2rem;
 }
 
 .town {
@@ -68,7 +101,7 @@ img {
 .explorer button {
   color: white;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
@@ -83,7 +116,7 @@ img {
 }
 
 .choose {
-  margin: 5px 0px 5px 1px;
+  margin: 5px 10px 5px 1px;
 }
 .choose__title {
   margin: 30px;
@@ -108,6 +141,7 @@ img {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  margin-right: -10px;
   background-color: #9356DC;
   display: flex;
   align-items: center;
@@ -117,38 +151,15 @@ img {
   color: white;
 }
 .choose__card fas {
-  margin-right: 15px;
   color: #c4c3c0;
 }
 .choose__card:hover {
   background-color: #f2eafb;
-  transform: scale(1.03);
 }
 .choose__card:hover:nth-child(3) {
   color: #9356DC;
 }
 
-.loader {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  inset: 0;
-  background-color: #ffffff;
-  color: #FF79DA;
-  z-index: 1;
-  opacity: 0.9;
-  animation: welcome 300ms 3s forwards;
-  transform-origin: top;
-}
-
-@keyframes welcome {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
 .Restaurants {
   background-color: #f6f6f6;
   padding: 0px 20px;
@@ -210,17 +221,6 @@ img {
   animation-iteration-count: infinite;
   transition: none;
 }
-@keyframes clignoter {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .card__description {
   position: relative;
@@ -236,37 +236,17 @@ img {
   transform: translateY(-70%);
 }
 
-.Homepage h1 {
-  text-align: center;
-  padding: 0.3rem;
-  margin: 0;
-  position: relative;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-}
-
-.Restau-heading {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.Restau-heading i {
-  font-size: 2rem;
-}
-
-footer {
-  background-color: #000;
-  color: white;
-  padding: 1rem 2rem;
-  margin-top: 3rem;
-}
-footer h2 {
-  font-family: "shrikhand", "sans-serif";
-  font-weight: 500;
-}
-footer li {
-  list-style-type: none;
-  margin-left: -2.5rem;
-  line-height: 2rem;
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background-color: #ffffff;
+  color: #FF79DA;
+  z-index: 1;
+  opacity: 0.9;
+  animation: welcome 300ms 2s forwards;
+  transform-origin: top;
 }
 
 @keyframes spin-off {
@@ -284,6 +264,25 @@ footer li {
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes welcome {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -307,7 +306,7 @@ body {
 }
 .restau-title h2 {
   font-family: "Shrikhand", "sans-serif";
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: white;
   border-radius: 2rem 2rem 0 0;
   margin: -2rem 0 3rem 0;
@@ -395,7 +394,10 @@ body {
   overflow: hidden;
 }
 .meal-group .menu__item .menu__item-info h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+.meal-group .menu__item .menu__item-info p {
+  font-size: 0.9rem;
 }
 .meal-group .menu__item .menu__item-info h4, .meal-group .menu__item .menu__item-info p {
   overflow: hidden;
@@ -438,7 +440,7 @@ body {
   width: 12rem;
   color: white;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
@@ -459,7 +461,7 @@ body {
     width: 100%;
     height: 100vh;
     margin: 2rem auto;
-    padding: 0 2rem;
+    padding: 0;
   }
 
   main {
@@ -522,7 +524,7 @@ body {
 }
 @media (min-width: 1201px) {
   body {
-    width: 98%;
+    width: 100%;
   }
 
   .Welcome-page {
