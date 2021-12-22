@@ -14,9 +14,6 @@
         transform: translateY(-60%) scale(1.3); 
     }       
 }
-@mixin box-shadow {
-    box-shadow: 2px 1px 8px -3px #000;
-}
 
 @mixin box-button {
     color: white;
